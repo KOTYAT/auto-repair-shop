@@ -2,7 +2,7 @@ import { createElement } from "../framework/render.js";
 import Model from "../model/model.js";
 
 export default function homeTemplate(model, func){
-    const html= `
+    const html= `<div>
             <section class="hero">
                 <h1>Welcome to AutoFix Pro</h1>
                 <p>Your trusted partner for all car repair needs</p>
@@ -19,7 +19,7 @@ export default function homeTemplate(model, func){
                         </div>
                     `).join('')}
                 </div>
-            </section>
+            </section></div>
         `;
     const element=createElement(html)
     return element;
